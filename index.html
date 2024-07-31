@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sinan Sarikaya" />
+    <meta
+      name="description"
+      content="Responsive todos app made using JavaScript"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="filter"></div>
+    <div id="logoContainer">
+      <img src="./img/logo.png" alt="logo" class="logo" />
+    </div>
+    <div class="social">
+      <a
+        href="https://github.com/sinansarikaya/javascript-todos-app"
+        target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/sinansarykaya/" target="_blank"
+        ><i class="fa-brands fa-linkedin-in"></i
+      ></a>
+      <a href="https://www.instagram.com/sinan.sarykaya" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+    </div>
+    <div class="alert-left">
+      <div class="alert"></div>
+    </div>
+    <div class="alert-right">
+      <div class="alert"></div>
+    </div>
+    <div class="box">
+      <i class="fa-solid fa-xmark"></i>
+      <h2 class="title">Edit</h2>
+      <input type="text" class="editItem" />
+      <input type="submit" class="editSubmit" value="Save" />
+    </div>
+    <div id="leftSide">
+      <header>
+        <h1 class="title">Todo List</h1>
+        <div class="add-container">
+          <form class="input-container">
+            <input type="text" class="todo-input" placeholder="Add an item" />
+            <select name="priority" class="priority">
+              <option selected disabled>Priority</option>
+              <option value="high">High</option>
+              <option value="middle">Middle</option>
+              <option value="low">Low</option>
+            </select>
+            <input type="submit" class="submitBtn" value="Add" />
+          </form>
+        </div>
+      </header>
+
+      <div class="list">
+        <!-- <div class="todo-list">
+          <div class="date">30/09/2022</div>
+          <div class="row">
+            <div class="todos">
+              <input
+                type="checkbox"
+                class="todoItem"
+                id="1"
+                value="I will buy a bike"
+              />
+              <label for="1" class="todoItem"> I will buy a bike</label>
+              <i class="fa-regular fa-pen-to-square"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="circle high"></div>
+          </div>
+        </div> -->
+      </div>
+      <div class="total">Available todos: 0</div>
+    </div>
+    <div id="rightSide">
+      <header>
+        <h1 class="title">I Have Done</h1>
+      </header>
+      <div class="list">
+        <!-- <div class="todo-list">
+        <div class="date">30/09/2022</div>
+        <div class="row">
+          <div class="todos">
+            <input type="checkbox" class="todoItem" id="1" value="I will buy a bike" />
+            <label for="1" class="todoItem"> I will buy a bike</label>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="circle high"></div>
+        </div> -->
+      </div>
+      <div class="total">Completed todos: 0</div>
+    </div>
+    <footer id="copyright">
+      Made with<span class="heart"> ♥ </span> by
+      <a href="https://github.com/sinansarikaya"><b>Sinan Sarıkaya</b></a>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
